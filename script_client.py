@@ -20,7 +20,7 @@ def save_base64_image_to_file_direct(base64_str, output_path):
 image_base64 = encode_image_to_base64("stairs.png")
 
 # Configurar la URL del servidor (ajusta-ho si el servidor està en un altre host o port)
-url = f"http://127.0.0.1:{SERVER_PORT}/infer"
+url = f"http://127.0.0.1:{SERVER_PORT}/depth"
 
 # Enviar la sol·licitud
 print("Call begin")
