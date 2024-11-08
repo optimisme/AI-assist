@@ -43,7 +43,7 @@ def depth_map_to_base64(depth_map):
     return base64.b64encode(buffer.read()).decode('utf-8')
 
 @app.route('/depth', methods=['POST'])
-def infer():
+def depth_inference():
     data = request.get_json()
     base64_image = data.get("image")
 
